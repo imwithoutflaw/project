@@ -16,9 +16,4 @@ class Student implements Person {
         return "Student ID: " + id + ", Name: " + name + " " + surname + ", Age: " + age;
     }
 
-    @Override
-    public int getYearsUntilRetirement() {
-        int retirementAge = 65;
-        return Math.max(0, retirementAge - age);
-    }
 }
